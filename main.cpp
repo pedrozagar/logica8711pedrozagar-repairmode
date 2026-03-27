@@ -2,15 +2,19 @@
 
 int main(){
 
-    double c = 4.69873456164;
-    double d = 9.0908;
+    int num1 = 8;
+    int num2 = 2;
+    int soma, subt, mult, div;
 
-    std::cout<<8+2<<std::endl;
-    std::cout<<10-4<<std::endl;
-    std::cout<<4*3<<std::endl;
-    std::cout<<8/2<<std::endl;
-    std::cout<<d<<std::endl;
-    
+    soma = num1 + num2;
+    subt = num1 - num2;
+    mult = num1 * num2;
+    div = num1 / num2;
+
+    std::cout<<soma<<std::endl;
+    std::cout<<subt<<std::endl;
+    std::cout<<mult<<std::endl;
+    std::cout<<div<<std::endl;
 
     return 0;
 }
