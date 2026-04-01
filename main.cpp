@@ -2,12 +2,15 @@
 
 int main(){
 
-    int a = 10;
-    int b = 6;
-   
-    std::cout<<((a > b) || (a + b) != 16)<<std::endl;
-    // o & toda condição deve ser verdade
+    bool condicao = true;
+    bool condicao1 = false;
 
-    
+    std::cout<<condicao<<std::endl;
+    std::cout<<condicao1<<std::endl;
+
+    //g++ main.cpp -o programa
+    //./programa
+
+
      return 0;
 }
