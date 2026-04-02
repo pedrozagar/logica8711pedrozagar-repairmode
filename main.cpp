@@ -1,16 +1,29 @@
 #include<iostream>
+#include<string>
 
 int main(){
 
-    auto num1 = 10;
-    auto num2 = 15.80f;
-    auto letra = 'E';
-    auto texto = "Pedro"; 
+    //solicitar ao usuário para ele digitar nome (primeiro nome)
+    //colocar a idade
+    //fazer um calculo para que diga que ano nasceu
+    //no final mostre o nome da pessoa..voce nasceu no ano..
+    //vamos tentar SEM IA?? 
 
-    std::cout<<num1<<std::endl;
-    std::cout<<num2<<std::endl;
-    std::cout<<letra<<std::endl;
-    std::cout<<texto<<std::endl;
+    std::string nome;
+    int idade;
+    int anoAtual = 2026;
+    int anoNascimento = 1998;
+
+    std::cout<<"digite seu nome: "<<std::endl;
+    std::cin>>nome;
+
+    std::cout<<"digite sua idade: "<<std::endl;
+    std::cin>>idade;
+
+    anoNascimento = anoAtual - idade;
+    
+    std::cout<<"seu nome e "<<nome<<"!!"<<std::endl;
+    std::cout<<"voce nasceu em: "<<anoNascimento<<"."<<std::endl;
 
      return 0;
 }
