@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+        #include<iostream>
+#include<windows.h> //<- adicionar esse aqui
+
+int main(){
+
+    SetConsoleOutputCP(CP_UTF8);//<-esse também
+    SetConsoleCP(CP_UTF8);//e esse também
+
+    return 0;
+}
+    ],
+    "version": 4
+    
+}
