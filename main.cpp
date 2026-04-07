@@ -7,11 +7,10 @@ int main(){
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
 
-    int a = 40;
-    std::string d = "minha casa é cão çacara";
+    std::string nome = "Pedro";
 
-    std::cout<<d<<std::endl;
-    
+    std::cout<<"Nome tem: "<<nome.length()<<" letras."<<std::endl;
+    std::cout<<"Nome tem: "<<nome.size()<<" letras."<<std::endl;
        
     return 0;
 }
