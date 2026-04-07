@@ -1,12 +1,17 @@
 #include<iostream>
 #include<string>
+#include<windows.h>
 
 int main(){
      
-    int a = 40;
-    std::string d = "10";
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
 
-    std::cout<<a+d<<std::endl;
+    int a = 40;
+    std::string d = "minha casa é cão çacara";
+
+    std::cout<<d<<std::endl;
     
-     return 0;
+       
+    return 0;
 }
