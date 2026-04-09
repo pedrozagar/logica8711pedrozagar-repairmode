@@ -1,20 +1,21 @@
 #include<iostream>
- 
+#include<string> 
+
 int main() {
 
-// if é se sim
-//else é se não
+    std::string user;
+    std::string senha;
 
-// neste estamos testando se é ou não é verdadeiro
-// preocupar-se mais com a estrutura do código de momento
-   
-    int a = 5;
-    int b = 2;
+    std::cout<<"Digite seu usuario de acesso: "<<std::endl;
+    std::cin>>user;
 
-    if(a > b){
-        std::cout<<"A é maior que B."<<std::endl;
+    std::cout<<"Digite sua senha: "<<std::endl;
+    std::cin>>senha;
+
+    if(senha == "R3dr@gxn"){
+        std::cout<<"O usuario "<<user<<" esta logado com sucesso!!"<<std::endl;
     }else{
-        std::cout<<"B é maior ou igual a A."<<std::endl;
+        std::cout<<"O usuario ou senha invalidos!"<<std::endl;
     }
  
     return 0;
