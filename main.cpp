@@ -8,6 +8,7 @@ int main(){
     float valorParafuso = 1.40;
     float valorTotalParafuso;
     float desconto;
+    float juros;
 
     std::cout<<"Digite a quantidade de parafusos desejada: "<<std::endl;
     std::cin>>qtdParafuso;
@@ -26,10 +27,9 @@ int main(){
         desconto = valorTotalParafuso * 0.90;
         std::cout<<"Sua compra ficou no valor total de R$: "<<desconto<<std::endl;
     }else{
+        juros = valorTotalParafuso * 1.10;
         std::cout<<"Sua compra ficou no valor total de R$: "<<valorTotalParafuso<<std::endl;
-    }
+    }        
 
     return 0;
 }
-
-
