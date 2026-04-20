@@ -3,13 +3,14 @@
 
 int main(){
 
-    int idade = 28;
-    float altura = 1.78;
-    std::string nome = "Pedro";
+    int numeros[3];
+    numeros[0] = 10;
+    numeros[1] = 20;
+    numeros[2] = 30;
 
-    std::cout<<sizeof(idade)<<std::endl;
-    std::cout<<sizeof(altura)<<std::endl;
-    std::cout<<sizeof(nome)<<std::endl;
+    for(int i = 0; i < 3; i++){
+        std::cout<<numeros[i]<<std::endl;
+    }
 
     return 0;
 
