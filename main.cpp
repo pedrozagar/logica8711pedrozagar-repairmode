@@ -1,15 +1,15 @@
 #include<iostream>
+#include<string>
 
 int main(){
 
-    int myNumbers[9] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
-    //for(int num: myNumbers){
-    //      std::cout<<num<<std::endl;
-   
-    for(int i = 0; i < 9; i++){
-        std::cout<<myNumbers[i]<<std::endl;
-    }
-    
+std::string nomes[3] = {"Joao", "Paula", "Murilo"};
+    int idades[3] = {27, 31, 20};
+
+    std::cout<<nomes[1]<<" tem "<<idades[1]<<" anos!"<<std::endl;
 
     return 0;
+
 }
+
+
