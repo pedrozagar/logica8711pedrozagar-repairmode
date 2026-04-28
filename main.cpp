@@ -1,16 +1,16 @@
 #include<iostream>
 
 void verificarAprovacao(float nota){
-    if(nota >= 7){
-        std::cout<<"Status: Aprovado!"<<std::endl;
-    }else{
+    if(nota <= 5){
         std::cout<<"Status: Reprovado!"<<std::endl;
+    }else{
+        std::cout<<"Status: Aprovado!"<<std::endl;
     }
 }
 
 int main(){
 
-    float minhaNota = 8.5;
+    float minhaNota = 4.8;
 
     verificarAprovacao(minhaNota);
 
