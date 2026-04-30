@@ -1,31 +1,20 @@
 #include<iostream>
 
-
 int main(){
 
-    //brlAmount: Valor em reais | exchangeRate: Taxe de Câmbio | usdAmount: Valor em dólares
-    double brlAmount, exchangeRate, usdAmount;
+    int num;
 
-    std::cout<<"---- Currency Converter: BRL to USD ----"<<std::endl;
+    std::cout<<"Digite um numero: "<<std::endl;
+    std::cin>>num;
 
-    //Entrada da taxa de câmbio (quanto vale 1 dólar hoje)
-    std::cout<<"Enter the current exchange rate (How much is 1 dollar in Reais?): "<<std::endl;
-    std::cin>>exchangeRate;
-    
-    //Entrada da quantia em Reais que a pessoa deseja converter
-    std::cout<<"Enter the amount in BRL(R$): "<<std::endl;
-    std::cin>>brlAmount;
+    std::cout<<"\n";
 
-    //Verificação lógica: Garante que o valor informado seja positivo
-    if(brlAmount > 0){
-        //Cálculo: Divide o montante em reais pela taxa de câmbio
-        usdAmount = brlAmount / exchangeRate;
-        std::cout<<"You will have $"<<usdAmount<<" US Dollars."<<std::endl;
+    if(num % 2 == 0){
+        std::cout<<"e par!"<<std::endl;
     }else{
-        //Mensagem de erro caso o valor seja zero ou negativo
-        std::cout<<"Error: Please enter a valid amount greater than zero."<<std::endl;
+        std::cout<<"e impar!"<<std::endl;
     }
-
+    
     return 0;
 
 }
