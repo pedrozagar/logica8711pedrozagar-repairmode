@@ -2,18 +2,15 @@
 
 int main(){
 
-    int num;
+    int totalSeconds;
 
-    std::cout<<"Digite um numero: "<<std::endl;
-    std::cin>>num;
+    std::cout<<"Enter total seconds: "<<std::endl;
+    std::cin>>totalSeconds;
 
-    std::cout<<"\n";
+    int minutes = totalSeconds / 60;
+    int seconds = totalSeconds % 60;
 
-    if(num % 2 == 0){
-        std::cout<<"e par!"<<std::endl;
-    }else{
-        std::cout<<"e impar!"<<std::endl;
-    }
+    std::cout<<"Time: "<<minutes<<" minutes and "<<seconds<<" seconds."<<std::endl;
     
     return 0;
 
