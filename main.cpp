@@ -1,24 +1,21 @@
-#include<iostream> //biblioteca
+#include<iostream>
 
-int quadrado(int n){
-    return n * n; //n² é ao quadrado
+//aqui vamos usar a função FOR. o FOR tem início, condição e incremento.
+
+void imprimirAteN(int n){
+    for(int i = 1; i <= n; i++){
+        std::cout<<i<<" ";
+    }       
 }
-
-int cubo(int n){
-        return n * n * n; //n³ é ao cubo
-    }
 
 int main(){
 
-    std::cout<<"Quadrado de 5: "<<quadrado(5)<<std::endl;
-    std::cout<<"Quadrado de 8: "<<quadrado(8)<<std::endl;
-    std::cout<<"Quadrado de 10: "<<quadrado(10)<<std::endl;
+    int numero;
 
-    std::cout<<"\n";
+    std::cout<<"Digite um numero: "<<std::endl;
+    std::cin>>numero;
 
-    std::cout<<"Cubo de 5: "<<cubo(5)<<std::endl;
-    std::cout<<"Cubo de 8: "<<cubo(8)<<std::endl;
-    std::cout<<"Cubo de 10: "<<cubo(10)<<std::endl;
+    imprimirAteN(numero);
 
-    return 0;
+    return 0;    
 }
