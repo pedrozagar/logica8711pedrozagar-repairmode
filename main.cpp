@@ -1,22 +1,13 @@
-#include<iostream>
+#include<iostream> //biblioteca aqui
+#include<format> //biblioteca aqui
+#include<string> //biblioteca aqui
 
 int main(){
 
-    int numero;
-    int contador = 0;
-    
-    while(true){
-        std::cout<<"Digite um numero (0 para parar): ";
-        std::cin>>numero;
+    std::string nome = "Pedro";
 
-        if(numero == 0){
-            break;
-        }
-
-        contador++;
-    }
-
-    std::cout<<"Voce digitou "<<contador<<" numeros!"<<std::endl;
+    std::string mensagem = std::format("Ola, {}! Voce tem {} anos.\n", nome);
+    std::cout<<mensagem;
 
     return 0;
 }
