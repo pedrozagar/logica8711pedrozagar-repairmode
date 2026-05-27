@@ -1,21 +1,23 @@
 #include<iostream>
 
-//aqui vamos usar a função FOR. o FOR tem início, condição e incremento.
-
-void imprimirAteN(int n){
-    for(int i = 1; i <= n; i++){
-        std::cout<<i<<" ";
-    }       
-}
-
 int main(){
 
-    int numero;
+    int numeros[5];
+    int soma = 0;
 
-    std::cout<<"Digite um numero: "<<std::endl;
-    std::cin>>numero;
+    for(int i = 0; i < 5; i++){
+        std::cout<<"Digite o numero: "<<(i + 1)<<": ";
+        std::cin>>numeros[i];
+        soma += numeros[i];
+    }
 
-    imprimirAteN(numero);
-
-    return 0;    
+    std::cout<<"Soma: "<<soma<<std::endl;
+  
 }
+
+//ANOTAÇÕES:
+
+//dentro do for: 
+    // i = o significa que começará no zero;
+    // i < 5 significa que contará até 5;
+    // i ++ significa mover o i para próxima posição.
