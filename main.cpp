@@ -1,17 +1,25 @@
 #include<iostream>
 
-int contarDigitos(int n){
-    if(n == 0) return 0;
+void tabuada(int numero, int multiplicador){
+    if(multiplicador == 0){
+        return;
+    }
 
-    return 1 + contarDigitos(n / 20);
+    tabuada(numero, multiplicador -1);
+
+    std::cout<<numero<<" x "<<multiplicador<<" = "
+    <<(numero * multiplicador)<<std::endl;
 }
 
 int main(){
 
-    int numero = 2026;
+    int numero;
+    
+    std::cout<<"Digite um numero para a tabuada: "<<std::endl;
+    std::cin>>numero;
 
-    std::cout<<"O numero "<<numero<<" tem "<<contarDigitos(numero)<<" digitos.\n";
+    tabuada(numero, 10);
 
-    return 0;
+return 0;
 
 }
