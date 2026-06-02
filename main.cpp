@@ -3,13 +3,10 @@
 int main(){
 
     int numero = 42;
-    double numero1 = 4.33;
+    int* ptr = &numero;
 
-    std::cout<<"Numero: "<<numero1<<std::endl;
-    std::cout<<"Endereço: "<<&numero1<<std::endl;
-
-    std::cout<<"Numero: "<<numero<<std::endl;
-    std::cout<<"Endereço: "<<&numero<<std::endl;
+    std::cout<<"Acessar via variavel: "<<numero<<std::endl;
+    std::cout<<"Acessar via ponteiro: "<<*ptr<<std::endl;
 
 return 0;
 }
