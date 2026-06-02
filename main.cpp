@@ -1,32 +1,15 @@
 #include<iostream>
-#include<string>
-#include<cctype>
 
-//função recursiva
-bool ehPalindromo(std::string s, int inicio, int fim){
-    if(inicio >= fim){
-        return true;
-    }    
-    if(s[inicio] != s[fim]){
-        return false;
-    }
-    return ehPalindromo(s, inicio +1, fim -1);
-}
+int main(){
 
-int main (){
+    int numero = 42;
+    double numero1 = 4.33;
 
-    std::string palavra;
+    std::cout<<"Numero: "<<numero1<<std::endl;
+    std::cout<<"Endereço: "<<&numero1<<std::endl;
 
-    std::cout<<"Digite uma palavra: "<<std::endl;
-    std::cin>>palavra;
+    std::cout<<"Numero: "<<numero<<std::endl;
+    std::cout<<"Endereço: "<<&numero<<std::endl;
 
-    for(char &c : palavra){
-        c = std::tolower(c);
-    }
-    if(ehPalindromo(palavra, 0, palavra.length() -1)){
-        std::cout<<"E palindrono!"<<std::endl;
-    }else{
-        std::cout<<"Nao e palindrono!"<<std::endl;
-    }
-    return 0;
+return 0;
 }
