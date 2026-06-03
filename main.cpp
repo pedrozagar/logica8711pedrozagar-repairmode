@@ -13,7 +13,20 @@ float calcularMedia(Aluno a){
 
 int main(){
 
-    Aluno aluno = {"Paulo", 8.0, 9.5};
+    std::string nome;
+    float nota1;
+    float nota2;
+
+    std::cout<<"digite o seu nome: "<<std::endl;
+    std::cin>>nome;
+
+    std::cout<<"digite a sua primeira nota: "<<std::endl;
+    std::cin>>nota1;    
+
+    std::cout<<"digite a sua segunda nota: "<<std::endl;
+    std::cin>>nota2;
+
+    Aluno aluno = {"Pedro", 8.0, 9.5};
 
     float media = calcularMedia(aluno);
 
