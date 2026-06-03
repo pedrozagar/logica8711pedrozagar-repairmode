@@ -1,16 +1,23 @@
 #include<iostream>
+#include<string>
 
-void dividir(int a, int b, int* quociente, int* resto){
-    *quociente = a / b;
-    *resto = a % b;
-}
+struct Pessoa{
+    std::string nome;
+    int idade;
+    float altura;
+};
 
 int main(){
 
-    int q, r;
+    Pessoa p1;
 
-    dividir(17, 5, &q, &r);
-    std::cout<<"Quociente: "<<q<<", Resto: "<<r<<std::endl;
+    p1.nome = "pedro";
+    p1.idade = 28;
+    p1.altura = 1.79;
+
+    std::cout<<"nome: "<<p1.nome<<std::endl;
+    std::cout<<"idade: "<<p1.idade<<std::endl;
+    std::cout<<"altura: "<<p1.altura<<std::endl;
 
     return 0;
 }
