@@ -1,33 +1,28 @@
 #include<iostream>
-#include<string>
-
-    struct Jogador{
-        std::string nome;
-        int cartaoAmarelo;
-        int cartaoVermelho;
-    };
 
 int main(){
-    std::cout<<"====== REGISTRO DE CARTOES ======"<<std::endl;
-    std::cout<<std::endl;
-    Jogador jogador;
-    std::cout<<"Nome do jogador: ";
-    std::cin>>jogador.nome;
-    std::cout<<"Cartoes amarelos: "<<std::endl;
-    std::cin>>jogador.cartaoAmarelo;
-    std::cout<<"Cartoes vermelhos: ";
-    std::cin>>jogador.cartaoVermelho;
-    std::cout<<std::endl;
-    std::cout<<"========== SITUACAO =========="<<std::endl;
+    int jogos;
 
-    if(jogador.cartaoVermelho > 0){
-        std::cout<<jogador.nome<<" foi expulso!"<<std::endl;
-    }else if(jogador.cartaoAmarelo >= 2){
-        std::cout<<jogador.cartaoAmarelo<<" recebeu 2 amarelos e foi expulso!"<<std::endl;
-    }else if(jogador.cartaoAmarelo ==1){
-        std::cout<<jogador.nome<<" recebeu 1 amarelo. Cuidado!"<<std::endl;
-    }else{
-        std::cout<<jogador.nome<<" esta limpo!"<<std::endl;
+    std::cout<<"===== CALCULADOR DE PUBLICO ======"<<std::endl;
+    std::cout<<std::endl;
+
+    std::cout<<"Quantos jogos? ";
+    std::cin>>jogos;
+
+    int somaPublico = 0;
+
+    for(int i = 1; i <= jogos; i++){
+        int publico;
+        std::cout<<"Publico jogo "<<i<<": ";
+        std::cin>>publico;
+        somaPublico += publico;
     }
+    int media = somaPublico / jogos;
+
+    std::cout<<std::endl;
+    std::cout<<"==== RESULTADO ===="<<std::endl;
+    std::cout<<"Media de publico: "<<media<<" pessoas"<<std::endl;
+    std::cout<<"Total de publico: "<<somaPublico<<" pessoas"<<std::endl;
+
     return 0;
 }
