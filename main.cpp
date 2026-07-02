@@ -5,31 +5,22 @@ int main(){
 
     std::vector<int>numeros;
 
-    std::cout<<"===== VECTOR (Arraylist em C++) ======"<<std::endl<<std::endl;
+    std::cout<<"======= Acessar elemento ========"<<std::endl;
 
-    numeros.push_back(10); //empurra o numero para o final;
-    numeros.push_back(20); //empurra o numero para o final;
-    numeros.push_back(30); //empurra o numero para o final;
-    
-    std::cout<<"numeros: ";
+    numeros.push_back(100);
+    numeros.push_back(200);
+    numeros.push_back(300);
+    numeros.push_back(400);
+
+    std::cout<<"vector: ";
     for(int i = 0; i < numeros.size(); i++){
         std::cout<<numeros[i]<<" ";
     }
     std::cout<<std::endl;
 
-    std::cout<<"tamanho: "<<numeros.size()<<std::endl;
-
-    int posicao;
-    std::cout<<"digite uma posicao: "<<std::endl;
-    std::cin>>posicao;
-    numeros.erase(numeros.begin() + posicao);
-
-    //numeros.pop_back();
-
-    std::cout<<"apos remover o ultimo: ";
-    for(int i = 0; i < numeros.size(); i++){
-        std::cout<<numeros[i]<<" ";
-    }
+    std::cout<<"elemento na posicao 0: "<<numeros[0]<<std::endl;
+    std::cout<<"elemento na posicao 2: "<<numeros[2]<<std::endl;
+    std::cout<<"ultimo elemento: "<<numeros[numeros.size() - 1]<<std::endl;
 
     return 0;
 
