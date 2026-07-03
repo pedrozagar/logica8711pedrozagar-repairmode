@@ -12,15 +12,18 @@ int main(){
     numeros.push_back(300);
     numeros.push_back(400);
 
-    std::cout<<"vector: ";
+    std::cout<<"antes: ";
     for(int i = 0; i < numeros.size(); i++){
         std::cout<<numeros[i]<<" ";
     }
     std::cout<<std::endl;
 
-    std::cout<<"elemento na posicao 0: "<<numeros[0]<<std::endl;
-    std::cout<<"elemento na posicao 2: "<<numeros[2]<<std::endl;
-    std::cout<<"ultimo elemento: "<<numeros[numeros.size() - 1]<<std::endl;
+    numeros.erase(numeros.begin() + 1);
+
+    std::cout<<"depois: ";
+    for(int i = 0; i < numeros.size(); i++){
+        std::cout<<numeros[i]<<" ";
+    }
 
     return 0;
 
