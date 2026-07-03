@@ -5,7 +5,7 @@ int main(){
 
     std::vector<int>numeros;
 
-    std::cout<<"======= Acessar elemento ========"<<std::endl;
+    std::cout<<"======= Limpar vector ========"<<std::endl;
 
     numeros.push_back(100);
     numeros.push_back(200);
